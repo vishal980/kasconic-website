@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kasconic Global - CRITICAL CARE Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+ <style>
+    :root{
+      /* Kasconic Colors - Consistent with the homepage */
+      --brand-dark: #3c4097; /* Primary Dark Blue/Purple */
+      --brand-light: #5bc9e4; /* Accent Aqua/Teal */
+      --muted: #6c757d;
+    }
+    body{
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; 
+      color: #222;
+      background-color: #f8f9fa; 
+    }
+    .bg-brand{
+      background: linear-gradient(90deg, var(--brand-dark), #2f336f); 
+      color: #fff;
+    }
+    .btn-accent{
+      background: var(--brand-light); 
+      color: var(--brand-dark); 
+      border: 0;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .btn-accent:hover{
+        background: #40b0cc; 
+        color: var(--brand-dark);
+    }
+    .hero-logo{
+      height: 56px; 
+      width: auto;
+    }
+    footer{
+      background: #0f1333;
+      color: #dfefff;
+    }
+    footer a{
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    footer a:hover{
+        color: var(--brand-light);
+    }
+    .navbar { border-bottom: 3px solid var(--brand-light); }
+    .dropdown:hover .dropdown-menu { display: block; }
+    .navbar-nav .dropdown-menu { border: none; border-radius: 12px; box-shadow: 0 12px 40px rgba(60,64,151,0.15); padding: 0.5rem; min-width: 280px; }
+    .navbar-nav .dropdown-item { border-radius: 8px; padding: 0.5rem 0.75rem; }
+    .navbar-nav .dropdown-item:hover { background: linear-gradient(90deg, rgba(91,201,228,0.2), rgba(91,201,228,0.1)); color: var(--brand-dark); }
+    .product-list-card{
+        background: #fff;
+        border: 1px solid rgba(60,64,151,0.08);
+        border-left: 5px solid var(--brand-dark); /* Highlight for Product Name */
+        border-radius: 8px;
+        padding: 1rem;
+        transition: all 0.3s ease;
+    }
+    .product-list-card:hover{
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        transform: translateY(-2px);
+        border-left: 5px solid var(--brand-light);
+    }
+    .pharma-img-placeholder{
+        filter: grayscale(10%);
+        border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="images/logo.png" alt="Kasconic Logo" class="hero-logo">
+        <div>
+          <strong style="color:var(--brand-dark)">KASCONIC GLOBAL</strong><br>
+          <small style="color:var(--muted)">Pharmaceuticals</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-2 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownProducts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownProducts">
+              <li><a class="dropdown-item" href="anti-diabetic.html"><i class="fas fa-tablets me-2 text-primary"></i>ANTI-DIABETIC</a></li>
+              <li><a class="dropdown-item" href="cardiovascular.html"><i class="fas fa-heartbeat me-2 text-primary"></i>CARDIOVASCULAR</a></li>
+              <li><a class="dropdown-item" href="cns.html"><i class="fas fa-brain me-2 text-primary"></i>CENTRAL NERVOUS SYSTEM</a></li>
+              <li><a class="dropdown-item" href="dermatological.html"><i class="fas fa-spa me-2 text-primary"></i>DERMATOLOGICAL</a></li>
+              <li><a class="dropdown-item" href="anti-viral.html"><i class="fas fa-shield-virus me-2 text-primary"></i>ANTI-VIRAL</a></li>
+              <li><a class="dropdown-item" href="others.html"><i class="fas fa-pills me-2 text-primary"></i>OTHERS</a></li>
+              <li><a class="dropdown-item fw-bold" href="critical-care.html" style="background: rgba(91,201,228,0.15); color:var(--brand-dark);"><i class="fas fa-syringe me-2 text-primary"></i>CRITICAL CARE</a></li>
+              <li><a class="dropdown-item" href="lvp.html"><i class="fas fa-flask me-2 text-primary"></i>LARGE VOLUME PARENTRALS</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="index.html#regulatory">Compliance</a></li>
+           <li class="nav-item"><a class="btn btn-accent px-4 py-2" href="index.html#contact-details">Enquire Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 bg-brand">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8 text-white">
+          <h1 class="display-5 fw-semibold">CRITICAL CARE Range</h1>
+          <p class="lead mt-3">High-Quality Injectables for Urgent and Life-Saving Treatments.</p>
+          <p class="mt-4 small">Our Critical Care portfolio includes a wide array of specialized antibiotics, antifungals, corticosteroids, and GI agents essential in hospital settings.</p>
+        </div>
+        <div class="col-lg-4 text-center">
+            <i class="fas fa-syringe fa-8x" style="color:var(--brand-light); opacity: 0.8;"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="product-list" class="py-5">
+    <div class="container">
+      <h3 style="color:var(--brand-dark)" class="mb-5 text-center">Complete List of CRITICAL CARE Products (Injectables)</h3>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        
+        <div class="col">
+          <div class="product-list-card h-100">
+            <h5 class="fw-bold" style="color:var(--brand-dark)">Cefepime injection</h5>
+            <p class="small text-muted mb-0">Dosage: 250mg/500mg/1000mg</p>
+          </div>
+        </div>
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Cefoperazone + Sulbactam</h5>
+              <p class="small text-muted mb-0">Dosage: 0.5gm+0.5gm / 1gm+1gm</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Ceftazidime injection</h5>
+              <p class="small text-muted mb-0">Dosage: 250mg/500mg/1000mg</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Ceftazidime + Avibactam injection</h5>
+              <p class="small text-muted mb-0">Dosage: 2gm+0.5gm</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Ceftriaxone injection</h5>
+              <p class="small text-muted mb-0">Dosage: 250mg/500mg/1000mg</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Ceftriaxone + Sulbactam</h5>
+              <p class="small text-muted mb-0">Dosage: 0.5gm+0.5gm / 1gm+0.5gm / 1gm+1gm</p>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Meropenem injection</h5>
+              <p class="small text-muted mb-0">Dosage: 0.5gm/1gm</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Imipenem + Cilastatin</h5>
+              <p class="small text-muted mb-0">Dosage: 0.5gm+0.5gm / 1gm+1gm</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Piperacillin + Tazobactam</h5>
+              <p class="small text-muted mb-0">Dosage: 2gm+0.25gm / 4gm+0.5gm</p>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Linezolid Injection</h5>
+              <p class="small text-muted mb-0">Dosage: 600mg</p>
+            </div>
+        </div>
+         <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Daptomycin injection</h5>
+              <p class="small text-muted mb-0">Dosage: 500mg</p>
+            </div>
+        </div>
+         <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Polymyxin B injection</h5>
+              <p class="small text-muted mb-0">Dosage: 5,00,000 / 10,00,000 Units</p>
+            </div>
+        </div>
+         <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Colistin Methane Sulphate for Injection</h5>
+              <p class="small text-muted mb-0">Dosage: 1 MU/2 MU/3 MU</p>
+            </div>
+        </div>
+         <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Tigecycline injection</h5>
+              <p class="small text-muted mb-0">Dosage: 50mg</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Levofloxacin injection</h5>
+              <p class="small text-muted mb-0">Dosage: 500mg</p>
+            </div>
+        </div>
+         <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Moxifloxacin injection</h5>
+              <p class="small text-muted mb-0">Dosage: 400mg</p>
+            </div>
+        </div>
+         <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Azithromycin injection</h5>
+              <p class="small text-muted mb-0">Dosage: 500mg</p>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Amikacin injection</h5>
+              <p class="small text-muted mb-0">Dosage: 100/250/500 mg</p>
+            </div>
+        </div>
+         <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Netilmicin injection</h5>
+              <p class="small text-muted mb-0">Dosage: 10/25/50/100 mg</p>
+            </div>
+        </div>
+         <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Gentamicin injection</h5>
+              <p class="small text-muted mb-0">Dosage: 10/20/40/80 mg</p>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Esomeprazole injection BP</h5>
+              <p class="small text-muted mb-0">Dosage: 40mg</p>
+            </div>
+        </div>
+         <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Omeprazole injection BP</h5>
+              <p class="small text-muted mb-0">Dosage: 40mg</p>
+            </div>
+        </div>
+         <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Pantoprazole injection BP</h5>
+              <p class="small text-muted mb-0">Dosage: 40mg</p>
+            </div>
+        </div>
+         <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Rabeprazole injection</h5>
+              <p class="small text-muted mb-0">Dosage: 20mg</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Hydrocortisone Sodium Succinate for Injection BP</h5>
+              <p class="small text-muted mb-0">Dosage: 100mg</p>
+            </div>
+        </div>
+         <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Methyl Prednisone Sodium Succinate for Injection USP</h5>
+              <p class="small text-muted mb-0">Dosage: 500/1000 mg</p>
+            </div>
+        </div>
+         <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Dexamethasone Sodium Phosphate Injection BP</h5>
+              <p class="small text-muted mb-0">Dosage: 4mg</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Iron Sucrose Injection USP</h5>
+              <p class="small text-muted mb-0">Dosage: 20mg</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Vancomycin injection</h5>
+              <p class="small text-muted mb-0">Dosage: 500/1000mg</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-list-card h-100">
+              <h5 class="fw-bold" style="color:var(--brand-dark)">Vecuronium injection</h5>
+              <p class="small text-muted mb-0">Dosage: 4/10mg</p>
+            </div>
+        </div>
+        
+      </div>
+      
+      <div class="text-center mt-5">
+        <h4 style="color:var(--brand-dark)">Need Bulk Enquiries or Product Details?</h4>
+        <p class="text-muted">Reach out to our sales team directly through the contact details below.</p>
+        <a href="index.html#contact-details" class="btn btn-lg btn-accent">Enquire Now &rarr;</a>
+      </div>
+      
+    </div>
+  </section>
+ 
+
+  <footer class="py-5" style="border-top: 4px solid var(--brand-light);">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4"><strong class="d-block mb-2 fs-5">KASCONIC GLOBAL</strong><p class="small mb-2" style="color: var(--brand-light);">DELIVERING HEALTHCARE WORLDWIDE</p><p class="small mb-0 opacity-90">Ethical Practices for each stakeholder.</p></div>
+            <div class="col-md-4"><h6 class="mb-3" style="color: var(--brand-light);">Quick Links</h6><ul class="list-unstyled small"><li class="mb-2"><a href="index.html#about"><i class="fas fa-chevron-right small me-1"></i>About Us</a></li><li class="mb-2"><a href="index.html#products"><i class="fas fa-chevron-right small me-1"></i>Product Categories</a></li><li class="mb-2"><a href="index.html#regulatory"><i class="fas fa-chevron-right small me-1"></i>Regulatory</a></li><li class="mb-2"><a href="#product-list"><i class="fas fa-chevron-right small me-1"></i>Critical Care List</a></li></ul></div>
+            <div class="col-md-4"><h6 class="mb-3" style="color: var(--brand-light);">Reach Us</h6><ul class="list-unstyled small"><li class="mb-2"><i class="fas fa-envelope me-2" style="color:var(--brand-light)"></i> kasconic@gmail.com, sales.kasconic@gmail.com</li><li class="mb-2"><i class="fas fa-phone me-2" style="color:var(--brand-light)"></i> +91 9930242658 / +91 981988141</li><li class="mb-2"><i class="fas fa-map-marker-alt me-2" style="color:var(--brand-light)"></i> 103, Apex Heights, Umbergaon, Valsad – 396170</li></ul></div>
+        </div>
+        <hr class="my-4" style="border-color: rgba(255,255,255,0.15);">
+        <div class="text-center small text-muted">© <span id="year"></span> Kasconic Global. All rights reserved.</div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById('year').innerText=new Date().getFullYear(); document.querySelectorAll('.dropdown').forEach(function(d){ d.addEventListener('mouseenter',function(){ var m=d.querySelector('.dropdown-menu'); if(m) m.classList.add('show'); }); d.addEventListener('mouseleave',function(){ var m=d.querySelector('.dropdown-menu'); if(m) m.classList.remove('show'); }); });</script>
+</body>
+</html>
